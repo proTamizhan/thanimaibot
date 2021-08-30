@@ -1,3 +1,18 @@
+# Config files, logs and stuff
+MashaRoBot/modules/helper_funcs/temp.txt
+MashaRoBot/elevated_users.json
+MashaRoBot/config.py
+MashaRoBot/config.ini
+log.txt
+kangsticker.png
+updates.txt
+
+# Session files
+MashaRoBot/*.session
+MashaRoBot/*.session-journal
+Masha.session-journal
+*.session
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +142,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS code and shit
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
