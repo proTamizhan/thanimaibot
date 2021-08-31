@@ -41,4 +41,4 @@ Hi I can send gps location..
  ❍ /gps <location>*:* Get gps location.
 """
 
-__mod_name__ = "GPS"
+__mod_name__ = "ɢᴘs"
