@@ -380,7 +380,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 
 
 
-__mod_name__ = "MEMES"
+__mod_name__ = "FUN"
 __command_list__ = [
     "runs",
     "slap",
