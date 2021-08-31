@@ -410,6 +410,6 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
-    TRUTH_HANDLER,
-    DARE_HANDLER,
+
+
 ]
