@@ -275,7 +275,7 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "GOOGLE"
+__mod_name__ = "Gᴏᴏɢʟᴇ"
 
 __help__ = """
  ❍ /google <text>*:* Perform a google search
@@ -283,5 +283,5 @@ __help__ = """
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /reverse: Does a reverse image search of the media which it was replied to.
  ❍ Masha <query>*:* Masha answers the query
-  💡Ex: `Masha where is India?`
+  💡Ex: `Athena where is India?`
 """
