@@ -4,11 +4,11 @@ from telegram import Update
 
 from telegram.ext import CallbackContext, run_async
 
-import MashaRobot.modules.truth_and_dare_string as truth_and_dare_string
+import MashaRoBot.modules.truth_and_dare_string as truth_and_dare_string
 
-from MashaRobot import dispatcher
+from MashaRoBot import dispatcher
 
-from MashaRobot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
 
 @run_async
 
