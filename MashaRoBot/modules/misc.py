@@ -96,12 +96,12 @@ __help__ = """
 *Wallpapers:*
  ❍ /wall <query>*:* get a wallpaper from wall.alphacoders.com
 *Currency converter:* 
- ❍ /cash*:* currency converter
-Example:
- `/cash 1 USD INR`  
-      _OR_
- `/cash 1 usd inr`
-Output: `1.0 USD = 75.505 INR`
+
+
+ 
+
+
+
 
 """
 
