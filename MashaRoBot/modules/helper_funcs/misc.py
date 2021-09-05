@@ -62,7 +62,7 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
             ]
         )
 
-    pairs = [modules[i * 4 : (i + 1) * 4] for i in range((len(modules) + 4 - 1) // 4)]
+    pairs = [modules[i * 3 : (i + 1) * 3] for i in range((len(modules) + 3 - 1) // 3)]
 
     round_num = len(modules) / 4
     calc = len(modules) - round(round_num)
@@ -72,7 +72,7 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
         pairs.append((modules[-1],))
 
     else:
-        pairs += [[EqInlineKeyboardButton("「 GO BACK TO MAIN MENU 」", callback_data="masha_back")]]
+        pairs += [[EqInlineKeyboardButton("🔙BACK TO MAIN MENU", callback_data="masha_back")]]
 
     return pairs
 
