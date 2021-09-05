@@ -16,7 +16,7 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity, InlineKe
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from MashaRoBot import dispatcher, OWNER_ID, SUDO_USERS, WHITELIST_USERS, TEMPORARY_DATA, LOGGER, spamcheck
+from MashaRoBot import dispatcher, OWNER_ID, DRAGONS, WHITELIST_USERS, TEMPORARY_DATA, LOGGER, spamcheck
 from MashaRoBot.modules.helper_funcs.handlers import CMD_STARTERS
 from MashaRoBot.modules.helper_funcs.misc import is_module_loaded, send_to_list
 from MashaRobot.modules.helper_funcs.chat_status import is_user_admin
