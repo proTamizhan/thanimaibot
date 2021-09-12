@@ -2,7 +2,7 @@ import os
 
 from time import sleep
 
-from MashaProBot import OWNER_ID, dispatcher
+from MashaRoBot import OWNER_ID, dispatcher
 
 from MashaRoBot.modules.helper_funcs.extraction import extract_user
 
