@@ -416,7 +416,7 @@ async def logo_gen(event):
 
     if not font_:
 
-        fpath_ = glob.glob("MashaRovot/resources/*")
+        fpath_ = glob.glob("MashaRoBot/resources/*")
 
         font_ = random.choice(fpath_)
 
