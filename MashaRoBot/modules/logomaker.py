@@ -744,4 +744,4 @@ __help__ = """
 
  """
 
-__mod_name__ = "LOGO"
+__mod_name__ = "Lᴏɢᴏ"
