@@ -314,7 +314,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./MashaRoBot/resources/Maghrib.ttf", 1000)
+    font = ImageFont.truetype("./MashaRoBot/resources/font.otf", 1000)
 
     w, h = draw.textsize(text, font=font)
 
@@ -548,7 +548,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./MashaRoBot/resources/font.otf", 330)
 
     w, h = draw.textsize(text, font=font)
 
