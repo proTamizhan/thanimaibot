@@ -162,7 +162,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/blackbg.jpg')
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
 
     draw = ImageDraw.Draw(img)
 
@@ -174,7 +174,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 330)
 
     w, h = draw.textsize(text, font=font)
 
@@ -232,7 +232,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/blackbg.jpg')
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
 
     draw = ImageDraw.Draw(img)
 
@@ -244,7 +244,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/Chopsic.otf", 950)
+    font = ImageFont.truetype("./MashRoBot/resources/Chopsic.otf", 950)
 
     w, h = draw.textsize(text, font=font)
 
@@ -302,7 +302,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/blackbg.jpg')
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
 
     draw = ImageDraw.Draw(img)
 
@@ -314,7 +314,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/Maghrib.ttf", 1000)
+    font = ImageFont.truetype("./MashaRoBot/resources/Maghrib.ttf", 1000)
 
     w, h = draw.textsize(text, font=font)
 
@@ -394,7 +394,7 @@ async def logo_gen(event):
 
         bg_ = await id_.download_media()
 
-        fpath_ = glob.glob("AnkiVector/resources/*")
+        fpath_ = glob.glob("MashaRoBot/resources/*")
 
         font_ = random.choice(fpath_)
 
@@ -416,7 +416,7 @@ async def logo_gen(event):
 
     if not font_:
 
-        fpath_ = glob.glob("AnkiVector/resources/*")
+        fpath_ = glob.glob("MashaRovot/resources/*")
 
         font_ = random.choice(fpath_)
 
@@ -502,7 +502,7 @@ async def logo_gen(event):
 
     if os.path.exists(font_):
 
-        if not font_.startswith("AnkiVector/resources/"):
+        if not font_.startswith("MashaRoBot/resources/"):
 
             os.remove(font_)    
 
@@ -536,7 +536,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/blackbg.jpg')
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
 
     draw = ImageDraw.Draw(img)
 
@@ -548,7 +548,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 330)
 
     w, h = draw.textsize(text, font=font)
 
@@ -608,7 +608,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/pandabg.png')
+    img = Image.open('./MashaRoBot/resources/pandabg.png')
 
     draw = ImageDraw.Draw(img)
 
@@ -620,7 +620,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/font.otf", 170)
+    font = ImageFont.truetype("./MashaRoBot/resources/font.otf", 170)
 
     w, h = draw.textsize(text, font=font)
 
@@ -680,7 +680,7 @@ async def lego(event):
 
     text = event.pattern_match.group(1)
 
-    img = Image.open('./AnkiVector/resources/spiderbg.png')
+    img = Image.open('./MashaRoBot/resources/spiderbg.png')
 
     draw = ImageDraw.Draw(img)
 
@@ -692,7 +692,7 @@ async def lego(event):
 
     shadowcolor = "blue"
 
-    font = ImageFont.truetype("./AnkiVector/resources/font.otf", 170)
+    font = ImageFont.truetype("./MashaRoBot/resources/font.otf", 170)
 
     w, h = draw.textsize(text, font=font)
 
