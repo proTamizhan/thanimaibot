@@ -358,7 +358,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I check for admins' permissions before executing any command and more stuffs
 
                  Here is the [My Owner](https://t.me/My_Dear_lightbright)
-                 If you have any question about Masha, let us know at @Athenasupportgrp.""",
+                 If you have any question about Athena, let us know at [@Athenasupport](https://t.me/athena support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -384,8 +384,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. I'm *Andrea Beta*
-                 \nHere is the [Source Code](https://t.me/TERA_BAAP_VILLAIN_XD) .""",
+            text=""" Hi.. I'm *Athena*
+                 \nHere is the [Source Code](https://t.me/athena_support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -680,7 +680,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Heya! I'm alive 🙂")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes, I am alive.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
