@@ -1,6 +1,6 @@
 import asyncio
 from telethon.tl.types import ChannelParticipantsAdmins
-from YoneRobot import telethn as bot
+from MashaRoBot import telethn as bot
 import telethon
 from telethon import events
 
