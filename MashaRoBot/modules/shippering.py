@@ -1,5 +1,5 @@
 from MashaRoBot import pbot as app
-from MashaRoBot.utils.dbfunc import get_couple, save_couple
+from MashaRoBot.modules.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
