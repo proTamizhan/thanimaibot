@@ -92,9 +92,9 @@ buttons = [
 
     ],
     [
-        InlineKeyboardButton(text="Cʜᴀᴛᴛɪɴɢ Gʀᴏᴜᴘ 📊", url="https://t.me/tamilpublicsquare"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/Mastro_Updates"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/athena_support"
+            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/Masto_Support"
         ),
     ],
 ]
