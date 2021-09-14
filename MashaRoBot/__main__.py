@@ -94,7 +94,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/Mastro_Updates"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/Masto_Support"
+            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/Mastro_Support"
         ),
     ],
 ]
@@ -358,7 +358,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I check for admins' permissions before executing any command and more stuffs
 
                  Here is the [My Owner](https://t.me/My_Dear_lightbright)
-                 If you have any question about Athena, let us know at [@Athenasupport](https://t.me/athena support) .""",
+                 If you have any question about Athena, let us know at [Mastrosupport](https://t.me/athea support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
