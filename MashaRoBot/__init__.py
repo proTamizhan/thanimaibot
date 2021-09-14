@@ -37,7 +37,7 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    OWNER_USERNAME = os.environ.get("@esto_420", None)
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
@@ -214,4 +214,3 @@ from MashaRoBot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
-        
