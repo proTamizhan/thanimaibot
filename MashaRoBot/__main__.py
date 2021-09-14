@@ -358,7 +358,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I check for admins' permissions before executing any command and more stuffs
 
                  Here is the [My Owner](https://t.me/My_Dear_lightbright)
-                 If you have any question about Athena, let us know at [Mastrosupport](https://t.me/athea support) .""",
+                 If you have any question about Athena, let us know at [Mastrosupport](https://t.me/Mastro_support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
