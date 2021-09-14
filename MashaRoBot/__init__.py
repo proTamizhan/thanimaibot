@@ -37,7 +37,7 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
-    OWNER_USERNAME = os.environ.get("@esto_420", None)
+    OWNER_USERNAME = os.environ.get("My_Dear_lightbright", None)
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
