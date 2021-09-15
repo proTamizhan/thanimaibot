@@ -1,3 +1,4 @@
+
 from telethon.tl.types import InputMediaDice
 
 from MashaRoBot.events import register
@@ -74,3 +75,4 @@ __help__ = """
 """
 
 __mod_name__ = "GAMES"
+
