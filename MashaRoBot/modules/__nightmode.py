@@ -10,7 +10,7 @@ from MashaRoBot.services.sql.night_mode_sql import (
     is_nightmode_indb,
     rmnightmode,
 )
-from DaisyX.services.telethon import tbot
+from MashaRoBot.services.telethon import tbot
 
 CLEAN_GROUPS = False
 hehes = ChatBannedRights(
