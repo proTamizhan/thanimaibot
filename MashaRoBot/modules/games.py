@@ -72,4 +72,4 @@ __help__ = """
  Usage: hahaha just a magic.
  warning: you would be in trouble if you input any other value than mentioned.
 """
-__mod_name__ = "GAMES"
+__mod_name__ = "GAMES🧩"
