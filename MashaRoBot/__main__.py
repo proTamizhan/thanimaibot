@@ -101,8 +101,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-*✰𝙷𝙴𝙻𝙿 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙷𝙴𝚁𝙴✰*"""
+`ʜɪ.. ɪ'ᴍ` [ATHENA](https://telegra.ph/file/adcb4a156fd0dbf833d0b.jpg) 
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
+MASHA_IMG = "https://telegra.ph/file/adcb4a156fd0dbf833d0b.jpg"
 
 DONATE_STRING = """No need.. I'm rich"""
 
