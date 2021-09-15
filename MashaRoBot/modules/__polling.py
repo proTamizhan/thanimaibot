@@ -414,4 +414,4 @@ If you have forgotten your poll id or deleted the poll so that you can't stop th
 """
 
 
-__mod_name__ = "ᴘᴏʟʟɪɴɢ"
+__mod_name__ = "ᴘᴏʟʟɪɴɢ📈"
