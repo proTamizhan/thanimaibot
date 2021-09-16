@@ -110,8 +110,8 @@ def ban(update: Update, context: CallbackContext) -> str:
 
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>Another one bites the dust..!/b>\n"
-            f"<code> </code><b>•  Banned:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code>❕</code><b>Ban Event</b>\n"
+            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
             reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
@@ -423,7 +423,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(PUNCHME_HANDLER)
 
-__mod_name__ = "ʙᴀɴ🔨"
+__mod_name__ = "BAN"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
@@ -432,3 +432,4 @@ __handlers__ = [
     ROAR_HANDLER,
     PUNCHME_HANDLER,
 ]
+    
