@@ -60,3 +60,4 @@ motor
 fontTools
 faker
 tswift
+youtubesearchpython
