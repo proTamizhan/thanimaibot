@@ -107,12 +107,11 @@ async def zombies(event):
         if del_u > 0:
 
             del_status = f"Found **{del_u}** Zombies In This Group.\
-
             \nClean Them By Using - `/zombies clean`"
-
-        await find_zombies.edit(del_status)
-
+            await find_zombies.edit(del_status)
         return
+        
+        
 
     # Here laying the sanity check
 
