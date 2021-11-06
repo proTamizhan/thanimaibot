@@ -2,14 +2,18 @@ import html
 import random
 import time
 
-import MashaRoBot.modules.fun_strings as fun_strings
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
+import innexiaBot.modules.fun_strings as fun_strings
+from innexiaBot import dispatcher
+from innexiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from innexiaBot.modules.helper_funcs.chat_status import is_user_admin
+from innexiaBot.modules.helper_funcs.alternate import typing_action
+from innexiaBot.modules.helper_funcs.filters import CustomFilters
+from innexiaBot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
-from telegram.ext import CallbackContext, run_async
+from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
+
+import innexiaBot.modules.helper_funcs.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -67,7 +71,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_MASHA_TEMPLATES)
+        temp = random.choice(fun_strings.SLAP_YONE_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -322,29 +326,25 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_to_message.reply_text(string)
     else:
         message.reply_text(string)
+        
+        
+@run_async
+@typing_action
+def goodnight(update, context):
+    message = update.effective_message
+    reply = random.choice(fun.GDNIGHT)
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
-__help__ = """
- ❍ /runs*:* reply a random string from an array of replies
- ❍ /slap*:* slap a user, or get slapped if not a reply
- ❍ /shrug*:* get shrug XD
- ❍ /table*:* get flip/unflip :v
- ❍ /decide*:* Randomly answers yes/no/maybe
- ❍ /toss*:* Tosses A coin
- ❍ /bluetext*:* check urself :V
- ❍ /roll*:* Roll a dice
- ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ❍ /shout <keyword>*:* write anything you want to give loud shout
- ❍ /weebify <text>*:* returns a weebified text
- ❍ /sanitize*:* always use this before /pat or any contact
- ❍ /pat*:* pats a user, or get patted
- ❍ /8ball*:* predicts using 8ball method 
- ❍ /truth*:* for random truth
+@run_async
+@typing_action
+def goodmorning(update, context):
+    message = update.effective_message
+    reply = random.choice(fun.GDMORNING)
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+    
 
- ❍ /dare*:* for random dare
 
- 
-"""
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
@@ -360,8 +360,12 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
-
-
+GDMORNING_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(gm|good morning)"), goodmorning, friendly="goodmorning"
+)
+GDNIGHT_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
+)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
@@ -377,10 +381,10 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(GDMORNING_HANDLER)
+dispatcher.add_handler(GDNIGHT_HANDLER)
 
-
-
-__mod_name__ = "Fᴜɴ🤩"
+__mod_name__ = "Memes"
 __command_list__ = [
     "runs",
     "slap",
@@ -412,6 +416,6 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
-
-
+    GDMORNING_HANDLER,
+    GDNIGHT_HANDLER,
 ]
