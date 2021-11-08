@@ -8,9 +8,9 @@ from coffeehouse.exception import CoffeeHouseError as CFError
 from telegram import Message, Chat, User, Update, Bot
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from cinderella import dispatcher, LYDIA_API, OWNER_ID
-import cinderella.modules.sql.lydia_sql as sql
-from cinderella.modules.helper_funcs.filters import CustomFilters
+from MashaRoBot import dispatcher, LYDIA_API, OWNER_ID
+import MashaRoBot.modules.sql.lydia_sql as sql
+from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 
 
 CoffeeHouseAPI = API(LYDIA_API)
@@ -87,18 +87,18 @@ def lydia(bot: Bot, update: Update):
             bot.send_message(OWNER_ID, f"lydia error: {e} occurred in {chat_id}!")
                     
 
-__mod_name__ = "LYDIA/CHATBOT"
+__mod_name__ = "CHATBOT"
 
 __help__ = """
 Commands
- - /elydia : Enables Lydia mode in the chat.
- - /dlydia  : Disables Lydia mode in the chat.
+ - /addchatbot: Enables Lydia mode in the chat.
+ - /rmchatbot  : Disables Lydia mode in the chat.
  
  
 """
                   
-ADD_CHAT_HANDLER = CommandHandler("elydia", add_chat, filters=CustomFilters.dev_filter)
-REMOVE_CHAT_HANDLER = CommandHandler("dlydia", remove_chat, filters=CustomFilters.dev_filter)
+ADD_CHAT_HANDLER = CommandHandler("addchatbot", add_chat, filters=CustomFilters.dev_filter)
+REMOVE_CHAT_HANDLER = CommandHandler("rmchatbot", remove_chat, filters=CustomFilters.dev_filter)
 LYDIA_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), lydia)
 # Filters for ignoring #note messages, !commands and sed.
