@@ -62,5 +62,5 @@ envparse
 tswift
 #profanity (Credits to Julia)
 better_profanity
-nekos
+nudepy
 
