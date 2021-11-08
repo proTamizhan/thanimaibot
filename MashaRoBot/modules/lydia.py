@@ -8,12 +8,12 @@ from coffeehouse.exception import CoffeeHouseError as CFError
 from telegram import Message, Chat, User, Update, Bot
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from MashaRoBot import dispatcher, LYDIA_API, OWNER_ID
+from MashaRoBot import dispatcher, AI_API_KEY, OWNER_ID
 import MashaRoBot.modules.sql.lydia_sql as sql
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 
 
-CoffeeHouseAPI = API(LYDIA_API)
+CoffeeHouseAPI = API(AI_API_KEY)
 api_client = LydiaAI(CoffeeHouseAPI)
 
 
