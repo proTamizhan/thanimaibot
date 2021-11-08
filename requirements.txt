@@ -60,5 +60,7 @@ motor
 fontTools
 envparse
 tswift
+#profanity (Credits to Julia)
+better_profanity
 
 
