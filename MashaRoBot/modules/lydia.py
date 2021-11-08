@@ -91,8 +91,8 @@ __mod_name__ = "CHATBOT"
 
 __help__ = """
 Commands
- - /addchatbot: Enables Lydia mode in the chat.
- - /rmchatbot  : Disables Lydia mode in the chat.
+ - /addchatbot: Enables chatbot mode in the chat.
+ - /rmchatbot  : Disables chatbot mode in the chat.
  
  
 """
