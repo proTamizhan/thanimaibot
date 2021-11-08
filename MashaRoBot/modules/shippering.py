@@ -22,7 +22,7 @@ def dt():
 
 def dt_tom():
 
-    a = str(int(dt()[0].split('/')[0]) + 2)+"/" 
+    a = str(int(dt()[0].split('/')[0]) + 1)+"/"+1
 
         dt()[0].split('/')[1]+"/" + dt()[0].split('/')[2]
 
