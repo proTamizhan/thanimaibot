@@ -2,7 +2,7 @@ from os import remove
 
 from pyrogram import filters
 
-from MashaRoBot import app, arq, BOT_ID, BOT_NAME
+from MashaRoBot import arq, BOT_ID, BOT_NAME
 from MashaRoBot.core.decorators.errors import capture_err
 from MashaRoBot.modules.admin import member_permissions
 from MashaRoBot.utils.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
