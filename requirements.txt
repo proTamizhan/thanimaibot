@@ -59,5 +59,5 @@ tzlocal==2.0
 motor
 fontTools
 envparse
-
+tswift
 
