@@ -634,6 +634,52 @@ def connection_status(func):
 
     return connected_status
 
+
+def user_admin(func):
+    @wraps(func)
+    def is_admin(update: Update, context: CallbackContext, *args, **kwargs):
+        bot = context.bot
+        user = update.effective_user
+        chat = update.effective_chat
+
+        if user and is_user_admin(chat, user.id):
+            return func(update, context, *args, **kwargs)
+        elif not user:
+            pass
+        elif DEL_CMDS and " " not in update.effective_message.text:
+            try:
+                update.effective_message.delete()
+            except:
+                pass
+        else:
+            update.effective_message.reply_text(
+                "Who dis non-admin telling me what to do? You want a punch?"
+            )
+
+    return is_admin
+
+
+def user_admin_no_reply(func):
+    @wraps(func)
+    def is_not_admin_no_reply(
+        update: Update, context: CallbackContext, *args, **kwargs
+    ):
+        bot = context.bot
+        user = update.effective_user
+        chat = update.effective_chat
+
+        if user and is_user_admin(chat, user.id):
+            return func(update, context, *args, **kwargs)
+        elif not user:
+            pass
+        elif DEL_CMDS and " " not in update.effective_message.text:
+            try:
+                update.effective_message.delete()
+            except:
+                pass
+
+    return is_not_admin_no_reply
+
 # Workaround for circular import with connection.py
 
 from MashaRoBot.modules import connection
