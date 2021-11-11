@@ -1,6 +1,6 @@
-from innexiaBot.events import register
-from innexiaBot import OWNER_ID
-from innexiaBot import telethn as tbot
+from MashaRoBot.events import register
+from MashaRoBot import OWNER_ID
+from MashaRoBot.import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 import shutil 
@@ -98,13 +98,13 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
-    fname2 = "LogoByInnexia.png"
+    fname2 = "LogoByAthena.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="💕 Made By @SiderzBot Support @SiderzChat")
+    await tbot.send_file(event.chat_id, fname2, caption="💕 Made By @Athena_Probot Support @Mastro_Support")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @SiderzChat, {e}')
+   await event.reply(f'Error Report @Mastro_Support, {e}')
 
 
 
@@ -138,13 +138,13 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
-    fname2 = "LogoByInnexia.png"
+    fname2 = "LogoByAthena.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @innexiaBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @Athena_probot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @SiderzChat, {e}')
+   await event.reply(f'Error Report @mastro_support, {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
@@ -156,4 +156,4 @@ __help__ = """
  ❍ /wlogo text :  Create your logo with your name
 
  """
-__mod_name__ = "Logo"
+__mod_name__ = "Lᴏɢᴏ™️"
