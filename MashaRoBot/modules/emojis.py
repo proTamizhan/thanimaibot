@@ -6,10 +6,10 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import is_user_admin, user_admin
-from cinderella.modules.helper_funcs.extraction import extract_user
+from MashaRoBot import dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin, user_admin
+from MashaRoBot.modules.helper_funcs.extraction import extract_user
 
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1
