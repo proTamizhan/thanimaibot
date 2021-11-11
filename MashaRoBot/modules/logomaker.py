@@ -1,6 +1,6 @@
 from MashaRoBot.events import register
 from MashaRoBot import OWNER_ID
-from MashaRoBot.import telethn as tbot
+from MashaRoBot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 import shutil 
