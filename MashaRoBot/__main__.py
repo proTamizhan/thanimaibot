@@ -74,35 +74,31 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` [*✰ 𝕬𝕥𝔥𝔢𝕟𝖆 𝕭𝕠𝖙 ✰*](https://telegra.ph/file/ee35275b37528747b2054.jpg)
-`I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
+`Hellow `I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🎉", url="t.me/athena_probot?startgroup=true"),
+            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Aʙᴏᴜᴛ 🔖", callback_data="masha_"),
-        InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Oᴡɴᴇʀ 🤴", url="https://t.me/My_Dear_lightbright"),
-        InlineKeyboardButton(text="𝐃𝐄𝐕𝐒", url="https://t.me/Mastro_updates/13"), 
+        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
     ],
     [
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/Mastro_Updates"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/thanimaibots"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/Mastro_Support"
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [ATHENA](https://telegra.ph/file/adcb4a156fd0dbf833d0b.jpg) 
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
+`ʜɪ..``ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
 MASHA_IMG = "https://telegra.ph/file/adcb4a156fd0dbf833d0b.jpg"
 
@@ -351,7 +347,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""  I'm *𝘈𝘵𝘩𝘦𝘯𝘢 𝘉𝘰𝘵*, a powerful group management bot built to help you manage your group easily.
+            text="""  hi I'm , a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -359,9 +355,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
 
-                 Here is the [My Owner](https://t.me/My_Dear_lightbright)
-                 If you have any question about Athena, let us know at [Mastrosupport](https://t.me/Mastro_support) .""",
-            parse_mode=ParseMode.MARKDOWN,
+                 parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -386,8 +380,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. I'm *Athena*
-                 \nHere is the [Source Code](https://t.me/athena_support) .""",
+            text=""" ʜᴇʏ ᴍʏ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀʏᴇ 🥰.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
