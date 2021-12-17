@@ -93,13 +93,13 @@ buttons = [
 
         [
 InlineKeyboardButton( text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"), InlineKeyboardButton( text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport"),
-   ],
+    ],
 ]
 
 
-
-HELP_STRINGS = """"
-ʜɪ..``ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`""""
+HELP_STRINGS = """
+`Hi..` [🤧](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+`Click on the buttons below to get documentation about specific modules..`"""
 
 
 DONATE_STRING = """No need.. I'm rich"""
