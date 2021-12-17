@@ -77,11 +77,6 @@ PM_START_TEXT = """
 `Hellow`
 `I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
 """
-
-PM_START_TEXT = """
-Hellow I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential. 
-"""
-
 buttons = [
     [
         InlineKeyboardButton(
@@ -103,8 +98,8 @@ InlineKeyboardButton( text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"), Inl
 
 
 
-HELP_STRINGS = """
-ʜɪ..``ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
+HELP_STRINGS = """"
+ʜɪ..``ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`""""
 
 
 DONATE_STRING = """No need.. I'm rich"""
