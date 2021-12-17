@@ -74,33 +74,40 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow`
-`I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
+`Hellow` [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) `My name is` *Masha*
+`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
+
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
+            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
-    ],
-    [
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/thanimaibots"),
-
-        [
-InlineKeyboardButton( text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"), InlineKeyboardButton( text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport"),
+        InlineKeyboardButton(
+            text="💾 SOURCE", callback_data="source_"),
+        InlineKeyboardButton(
+            text="👥 SUPPORT", url="https://t.me/wastebots"
+        ),
     ],
 ]
 
 
-DONATE_STRING = """No need.. I'm rich"""
-HELP_STRINGS = """Hi.. [🤧](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
-Click on the buttons below to get documentation about specific modules."""
+HELP_STRINGS = """
+`Hi.. I'm` [MASHA🙋‍♀️](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+`Click on the buttons below to get documentation about specific modules..`"""
 
+
+MASHA_IMG = "https://telegra.ph/file/6937614341f42020a2ebc.jpg"
+
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -210,7 +217,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Heya :) PM me if you have any questions on how to use me!".format(
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -289,7 +296,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "「 *HELP FOR* *{}* 」:\n".format(
+                "Here is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -299,7 +306,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="「 GO BACK 」", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                 ),
             )
 
@@ -341,20 +348,20 @@ def help_button(update, context):
 
 
 @run_async
-def Masha_about_callback(update: Update, context: CallbackContext):
+def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""  I'm *Andrea Beta*, a powerful group management bot built to help you manage your group easily.
-                 ❍ I can restrict users.
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [Contact My Owner](https://t.me/TERA_BAAP_VILLAIN_XD).
-                 If you have any question about Masha, let us know at @AndreaSupportChat.""",
+            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
+                 \n❍ I can restrict users.
+                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 \n❍ I have an advanced anti-flood system.
+                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n❍ I check for admins' permissions before executing any command and more stuffs
+                 \n\n_Masha's licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -371,23 +378,23 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=False,
+                disable_web_page_preview=True,
         )
 
 
 @run_async
-def Source_about_callback(update: Update, context: CallbackContext):
+def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. I'm *Aʟᴏɴᴇ Kɪɴɢ*
-                 \nᴍʏ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀᴛᴇ .""",
+            text=""" Hi..🤗 I'm *MASHA*
+                 \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back")
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
                  ]
                 ]
             ),
@@ -398,7 +405,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=False,
+                disable_web_page_preview=True,
         )
 
 @run_async
@@ -432,7 +439,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Hᴇʟᴘ ❔",
+                            text="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -453,7 +460,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
             ),
         )
 
@@ -676,7 +683,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Heya! I'm alive 🙂")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
