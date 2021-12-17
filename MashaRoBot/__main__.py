@@ -375,32 +375,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
         )
 
 
-@run_async
-def Source_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "source_":
-        query.message.edit_text(
-            text="""
-              ʜᴇʏ ᴍʏ sᴏᴜʀᴄᴇ ɪs ᴘʀɪᴠᴀʏᴇ 🥰
-                          """,
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
-                 ]
-                ]
-            ),
-        )
-    elif query.data == "source_back":
-        query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )
+
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
