@@ -97,12 +97,10 @@ InlineKeyboardButton( text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"), Inl
 ]
 
 
-HELP_STRINGS = """
-Hi.. [🤧](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+DONATE_STRING = """No need.. I'm rich"""
+HELP_STRINGS = """Hi.. [🤧](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
 Click on the buttons below to get documentation about specific modules."""
 
-
-DONATE_STRING = """No need.. I'm rich"""
 
 IMPORTED = {}
 MIGRATEABLE = []
