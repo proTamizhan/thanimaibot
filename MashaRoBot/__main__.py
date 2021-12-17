@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Eʟɪsᴀ 🌟*
+`Hellow`
 `I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
 """
 
@@ -100,6 +100,7 @@ buttons = [
 InlineKeyboardButton( text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"), InlineKeyboardButton( text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport"),
    ],
 ]
+
 
 
 HELP_STRINGS = """
