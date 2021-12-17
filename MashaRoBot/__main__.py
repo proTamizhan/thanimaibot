@@ -174,8 +174,7 @@ def test(update: Update, context: CallbackContext):
 @run_async
 def start(update: Update, context: CallbackContext):
     args = context.args
-    uptime = get_readable_time((time.time() - StartTime))
-    if update.effective_chat.type == "private":
+     if update.effective_chat.type == "private":
         if len(args) >= 1:
             if args[0].lower() == "help":
                 send_help(update.effective_chat.id, HELP_STRINGS)
