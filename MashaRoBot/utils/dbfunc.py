@@ -1,4 +1,5 @@
-from MashaRoBot.mongo import as db
+from MashaRoBot import config
+MONGO_DB = db
 
 from typing import Dict, List, Union
 
