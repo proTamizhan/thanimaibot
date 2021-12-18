@@ -3,11 +3,25 @@ import time
 import re
 from sys import argv
 from typing import Optional
-import MashaRoBot.modules.sql.users_sql as sql
-
-from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
+SUPPORT_CHAT = "chucky_support"
+from MashaRoBot import (
+    ALLOW_EXCL,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    SUPPORT_CHAT,
+    dispatcher,
+    StartTime,
+    telethn,
+    pbot,
+    updater,
+)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -60,51 +74,41 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow`
-
-┏━━━━━━━━━━━━━━━━
-┣ ₪ *Uptime:* `{}`
-┣ ₪ `{}` *users, across* `{}` *chats.*
-┗━━━━━━━━━━━━━━━━━
-
-`I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential.` 
+`Hellow` [🤗](https://telegra.ph/file/8ebe3e97107b9c21137de.jpg)
+`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
+            text="Aᴅᴅ Mᴇ 🥰", url="t.me/Chuckymusic_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
+        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/Kittu_the_criminall"),
     ],
     [
-        InlineKeyboardButton(text="❤️𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊$💙", url="t.me/Thanimaibots"),
-        InlineKeyboardButton(text="✨ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭✨", url="t.me/Thanimaisupport"),
-    ],
-    [
-        InlineKeyboardButton(text="⚠️𝗦𝗼𝘂𝗿𝗰𝗲⚠️🖥️", callback_data="source_"
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/chuckmusicupdate"),
+        InlineKeyboardButton(
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/chucky_support"
         ),
     ],
 ]
 
-START_IMG = "https://telegra.ph/file/3d66a8c59bae122589b3a.mp4"
+
 
 HELP_STRINGS = """
-Hey There!.
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message.
-× /donate: Information related on how to support my creator!
-All commands can either be used with / OR !."""
+`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/7aba4b67279c844454b4c.jpg)
+`Click on the buttons below to get documentation about specific modules..`"""
 
 
-MASHA_IMG = "https://telegra.ph/file/6937614341f42020a2ebc.jpg"
+MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
 
-DONATE_STRING = """No need I'm rich 😏."""
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -165,6 +169,12 @@ def send_help(chat_id, text, keyboard=None):
     )
 
 
+@run_async
+def test(update: Update, context: CallbackContext):
+    # pprint(eval(str(update)))
+    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("This person edited a message")
+    print(update.effective_message)
 
 
 @run_async
@@ -207,21 +217,11 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_video(
-            START_IMG, caption= "<code>I'm awake already!\nHaven't slept since</code>: <code>{}</code>".format(
+        update.effective_message.reply_text(
+            "Nan uir oda erukan da ena look 😒😒😒!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                  [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport")
-                  ],
-                  [
-                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/thanimaibots")
-                  ]
-                ]
-            ),
         )
 
 
@@ -347,35 +347,51 @@ def help_button(update, context):
     except BadRequest:
         pass
 
- @run_async
- def Masha_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "masha":
-        query.message.edit_text(
-            text=""" 🤖  𝕴'𝖒 *𝕿𝖍𝖆𝖓𝖎𝖒𝖆𝖎 𝖆𝖗𝖆𝖘𝖆𝖓*, 𝖆 𝖕𝖔𝖜𝖊𝖗𝖋𝖚𝖑 𝖌𝖗𝖔𝖚𝖕 𝖒𝖆𝖓𝖆𝖌𝖊𝖒𝖊𝖓𝖙 𝖇𝖔𝖙 𝖇𝖚𝖎𝖑𝖙 𝖙𝖔 𝖍𝖊𝖑𝖕 𝖞𝖔𝖚 𝖒𝖆𝖓𝖆𝖌𝖊 𝖞𝖔𝖚𝖗 𝖌𝖗𝖔𝖚𝖕 𝖊𝖆𝖘𝖎𝖑𝖞.
-                 
-❍ I can restrict users.
-                 
-❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 
-❍ I have an advanced anti-flood system.
-                
-❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 
-❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 
-❍ I check for admins' permissions before executing any command and more stuffs
-                If you have any question about Thanimai arasan, let us know at @Thanimaibots.""",
 
 @run_async
-def Source_about_callback(update: Update, context: CallbackContext):
+def Masha_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "masha_":
+        query.message.edit_text(
+            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
+                 \n❍ I can restrict users.
+                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 \n❍ I have an advanced anti-flood system.
+                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n❍ I check for admins' permissions before executing any command and more stuffs
+                 \n\n_Masha's licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "masha_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
+        )
+
+
+@run_async
+def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Heya...*
-                 \nMy Source is Private .""",
+            text=""" Hi..🤗 I'm *Lonely king*
+                 \nMy source code is private  [support](t.me/thanimaisupport) .""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -390,7 +406,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=False,
+                disable_web_page_preview=True,
         )
 
 @run_async
@@ -663,18 +679,17 @@ def migrate_chats(update: Update, context: CallbackContext):
     LOGGER.info("Successfully migrated!")
     raise DispatcherHandlerStop
 
-
 def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Yes I am Back to online!](https://telegra.ph/file/9825bc2819bb7c78abe67.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
-            )
+                "Bot isnt able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
+
 
     test_handler = CommandHandler("test", test)
     start_handler = CommandHandler("start", start)
@@ -685,6 +700,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
+    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
