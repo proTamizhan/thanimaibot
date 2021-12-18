@@ -9,8 +9,7 @@ import aiohttp
 import requests
 from bs4 import BeautifulSoup
 from countryinfo import CountryInfo
-from faker import Faker
-from faker.providers import internet
+
 from PyDictionary import PyDictionary
 from pyrogram import errors, filters
 from pyrogram.types import (
@@ -644,7 +643,7 @@ async def inline_query_handler(client, query):
             results = []
             fake = Faker()
             name = str(fake.name())
-            fake.add_provider(internet)
+            
             address = str(fake.address())
             ip = fake.ipv4_private()
             cc = fake.credit_card_full()
