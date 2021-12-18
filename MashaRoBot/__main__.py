@@ -59,7 +59,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
+TG = """
 Hellow`
 ┏━━━━━━━━━━━━━━━━
 ┣ ₪ *Uptime:* `{}`
@@ -201,7 +201,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                TG,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -365,7 +365,7 @@ def Masha_about_callback(update, context):
         )
     elif query.data == "masha_back":
         query.message.edit_text(
-                PM_START_TEXT,
+                TG,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -392,7 +392,7 @@ def Source_about_callback(update, context):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-                PM_START_TEXT,
+                TG,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
