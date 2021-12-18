@@ -7,7 +7,7 @@ from telegram import Update,KeyboardButton,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler,CallbackContext, MessageHandler,Filters
 import os
 PORT = int(os.environ.get('PORT','8443'))
-TOKEN = os.environ.get('BOT_TOKEN',None)
+TOKEN = os.environ.get('BOT_TOKEN','5098197426:AAEVAUwI1bFoG21lrpDKY9Z0vfXmOQGx3yc')
 HEROKU_APP_NAME=os.environ.get('HEROKU_APP_NAME',None)
 owner=os.environ.get('OWNER',None)
 def logg(m):
@@ -38,7 +38,7 @@ logger = logging.getLogger(__name__)
 
 
 ##Making Updater For TeleCallerBot
-updater=Updater
+updater=Updater(TOKEN)
 dispatcher= updater.dispatcher
 
 
