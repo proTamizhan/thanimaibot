@@ -61,7 +61,6 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """ 
 `Hellow`
-`{}`users, `{}` chats
 `I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential.` 
 """
 buttons = [
@@ -73,12 +72,14 @@ buttons = [
         InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/ThETeLeGrAmPrO"),
+        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
     ],
     [
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/thanimaibots"),
-        InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/chucky_support"
+        InlineKeyboardButton(text="❤️𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊$💙", url="t.me/Thanimaibots"),
+        InlineKeyboardButton(text="✨ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭✨", url="t.me/Thanimaisupport"),
+    ],
+    [
+        InlineKeyboardButton(text="⚠️𝗦𝗼𝘂𝗿𝗰𝗲⚠️🖥️", callback_data="source_"
         ),
     ],
 ]
