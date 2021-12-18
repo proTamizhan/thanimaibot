@@ -353,6 +353,25 @@ def help_button(update, context):
     except BadRequest:
         pass
 
+@run_async
+def Masha_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "masha":
+        query.message.edit_text(
+            text=""" 🤖  𝕴'𝖒 *𝕿𝖍𝖆𝖓𝖎𝖒𝖆𝖎 𝖆𝖗𝖆𝖘𝖆𝖓*, 𝖆 𝖕𝖔𝖜𝖊𝖗𝖋𝖚𝖑 𝖌𝖗𝖔𝖚𝖕 𝖒𝖆𝖓𝖆𝖌𝖊𝖒𝖊𝖓𝖙 𝖇𝖔𝖙 𝖇𝖚𝖎𝖑𝖙 𝖙𝖔 𝖍𝖊𝖑𝖕 𝖞𝖔𝖚 𝖒𝖆𝖓𝖆𝖌𝖊 𝖞𝖔𝖚𝖗 𝖌𝖗𝖔𝖚𝖕 𝖊𝖆𝖘𝖎𝖑𝖞.
+                 
+❍ I can restrict users.
+                 
+❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 
+❍ I have an advanced anti-flood system.
+                
+❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 
+❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 
+❍ I check for admins' permissions before executing any command and more stuffs
+                If you have any question about Thanimai arasan, let us know at @Thanimaibots.""",
 
 @run_async
 def Source_about_callback(update: Update, context: CallbackContext):
@@ -672,7 +691,6 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
