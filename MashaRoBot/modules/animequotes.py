@@ -6,11 +6,11 @@ from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
-import GroupMenter.modules.animequotes_strings as animequotes_strings
-from GroupMenter import dispatcher
-from GroupMenter.modules.disable import DisableAbleCommandHandler
-from GroupMenter.modules.helper_funcs.chat_status import (is_user_admin)
-from GroupMenter.modules.helper_funcs.extraction import extract_user
+import MashaRoBot.modules.animequotes_strings as animequotes_strings
+from MashaRoBot import dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.chat_status import (is_user_admin)
+from MashaRoBot.modules.helper_funcs.extraction import extract_user
 
 @run_async
 def fun(update: Update, context: CallbackContext):
