@@ -4,24 +4,10 @@ import re
 from sys import argv
 from typing import Optional
 SUPPORT_CHAT = "chucky_support"
-from MashaRoBot import (
-    ALLOW_EXCL,
-    CERT_PATH,
-    DONATION_LINK,
-    LOGGER,
-    OWNER_ID,
-    PORT,
-    SUPPORT_CHAT,
-    TOKEN,
-    URL,
-    WEBHOOK,
-    SUPPORT_CHAT,
-    dispatcher,
-    StartTime,
-    telethn,
-    pbot,
-    updater,
-)
+import MashaRoBot.modules.sql.users_sql as sql
+from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
