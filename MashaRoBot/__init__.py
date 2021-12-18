@@ -333,8 +333,7 @@ telethn = TelegramClient("masha", API_ID, API_HASH)
 pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 dispatcher = updater.dispatcher
-
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
+pgram = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 DEV_USERS = list(DEV_USERS)
 
@@ -363,3 +362,13 @@ tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 
 tg.MessageHandler = CustomMessageHandler
+
+
+BOT_ID = bottie.id
+
+print("Starting Pyrogram Client")
+pgram.start()
+
+print("Aquiring BOT Client Info")
+
+bottie = pgram.get_me()
