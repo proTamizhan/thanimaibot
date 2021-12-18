@@ -59,23 +59,27 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/8ebe3e97107b9c21137de.jpg)
-`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
+PM_START_TEXT = """ 
+Hellow`
+┏━━━━━━━━━━━━━━━━
+┣ ₪ *Uptime:* `{}`
+┣ ₪ `{}` *users, across* `{}` *chats.*
+┗━━━━━━━━━━━━━━━━━
+`I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential.` 
 """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/Chuckymusic_bot?startgroup=true"),
+            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/Kittu_the_criminall"),
+        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/ThETeLeGrAmPrO"),
     ],
     [
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/chuckmusicupdate"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 📊", url="https://t.me/thanimaibots"),
         InlineKeyboardButton(
             text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/chucky_support"
         ),
