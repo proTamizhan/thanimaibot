@@ -59,13 +59,9 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-TG = """
-Hellow`
-┏━━━━━━━━━━━━━━━━
-┣ ₪ *Uptime:* `{}`
-┣ ₪ `{}` *users, across* `{}` *chats.*
-┗━━━━━━━━━━━━━━━━━
-`I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential.` 
+PM_START_TEXT = """
+`Hellow` [🤗](https://telegra.ph/file/8ebe3e97107b9c21137de.jpg)
+`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
 buttons = [
     [
@@ -201,7 +197,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                TG,
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -365,7 +361,7 @@ def Masha_about_callback(update, context):
         )
     elif query.data == "masha_back":
         query.message.edit_text(
-                TG,
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -392,7 +388,7 @@ def Source_about_callback(update, context):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-                TG,
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
