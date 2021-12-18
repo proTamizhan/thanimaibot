@@ -177,7 +177,7 @@ def error(update, context):
 
 
 
-dispatcher.add_handler(MessageHandler(Filters.chat_type.private & Filters.forwarded,Forwarded))
+dispatcher.add_handler(MessageHandler(Filters.chat.private Filters.forwarded,Forwarded))
 dispatcher.add_handler(CommandHandler("start",start))
 dispatcher.add_handler(CommandHandler("search_id",search_id))
 dispatcher.add_handler(CommandHandler("check_name",check_name))
