@@ -310,7 +310,7 @@ DRAGONS.add(OWNER_ID)
 
 DEV_USERS.add(OWNER_ID)
 
-DEV_USERS.add(1491497760)
+DEV_USERS.add(1491497760) #plz dont remove id
 
 if not SPAMWATCH_API:
 
