@@ -64,6 +64,7 @@ tswift
 better_profanity
 nudepy
 img2pdf
-
+aiofiles
+wget
 pendulum
 
