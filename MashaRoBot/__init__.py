@@ -109,6 +109,8 @@ if ENV:
     API_ID = os.environ.get("API_ID", None)
 
     API_HASH = os.environ.get("API_HASH", None)
+    
+    LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', None)
 
     DB_URI = os.environ.get("DATABASE_URL")
 
