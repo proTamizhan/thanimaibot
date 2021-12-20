@@ -2,7 +2,7 @@
 
 from pyrogram import filters
 
-from MashaRoBot import pbot #pgram
+from MashaRoBot import pbot as pgram
 from MashaRoBot.utils.errors import capture_err
 from MashaRoBot.modules.sql.carbonfunc import make_carbon
 
