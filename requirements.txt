@@ -64,4 +64,5 @@ tswift
 better_profanity
 nudepy
 img2pdf
+pendulum
 
