@@ -63,4 +63,5 @@ tswift
 #profanity (Credits to Julia)
 better_profanity
 nudepy
+img2pdf
 
