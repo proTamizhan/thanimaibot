@@ -4,6 +4,8 @@ import os
 
 import sys
 
+from aiohttp import ClientSession
+
 import time
 
 import spamwatch
@@ -327,6 +329,10 @@ else:
         sw = None
 
         LOGGER.warning("Can't connect to SpamWatch!")
+        
+#install aiohttp session
+print("[MashaRoBot]: Initializing AIOHTTP Session")
+aiohttpsession = ClientSession() 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 
