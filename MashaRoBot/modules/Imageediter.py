@@ -6,14 +6,7 @@ from pyrogram.types import (
     Message,
 )
 
-from MashaRoBot.add.edit_1 import (  # pylint:disable=import-error
-    black_white,
-    box_blur,
-    bright,
-    g_blur,
-    mix,
-    normal_blur,
-)
+
 from MashaRoBot.add.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
