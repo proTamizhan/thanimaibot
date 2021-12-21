@@ -81,7 +81,8 @@ if ENV:
     except ValueError:
         raise Exception(
             "Your tiger users list does not contain valid integers.")
-
+     
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get('TEMP_DOWNLOAD_DIRECTORY', None)
     INFOPIC = bool(os.environ.get('INFOPIC', False))
     EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
