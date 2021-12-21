@@ -1,13 +1,11 @@
-
-
 from pyrogram import filters
 
-from MashaRoBot import pbot 
+from MashaRoBot import register 
 from MashaRoBot.utils.errors import capture_err
 from MashaRoBot.modules.sql.carbonfunc import make_carbon
 
 
-@pbot.on_message(filters.command("carbon"))
+@register.on_message(filters.command("carbon"))
 @capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:
