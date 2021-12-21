@@ -1,4 +1,3 @@
-
 from pyrogram import filters
 from pyrogram.types import (
     CallbackQuery,
@@ -7,7 +6,7 @@ from pyrogram.types import (
     Message,
 )
 
-from MashaRoBot.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from MashaRoBot.add.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -15,7 +14,7 @@ from MashaRoBot.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-erro
     mix,
     normal_blur,
 )
-from MashaRoBot.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from MashaRoBot.add.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -25,13 +24,13 @@ from MashaRoBot.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-erro
     sepia_mode,
     sticker,
 )
-from MashaRoBot.Addons.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from MashaRoBot.add.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from MashaRoBot.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from MashaRoBot.add.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
