@@ -2,7 +2,7 @@
 
 from MashaRoBot import dispatcher
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.alternate import typing_action
+from MashaRoBot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
