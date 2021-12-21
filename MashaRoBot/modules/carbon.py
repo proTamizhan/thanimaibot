@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from MashaRoBot import register 
+from MashaRoBot import events as register
 from MashaRoBot.utils.errors import capture_err
 from MashaRoBot.modules.sql.carbonfunc import make_carbon
 
