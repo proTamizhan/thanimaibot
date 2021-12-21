@@ -6,34 +6,7 @@ from telegram.ext import run_async
 
 
 
-caps = [
-    "ᴀ",
-    "ʙ",
-    "ᴄ",
-    "ᴅ",
-    "ᴇ",
-    "ғ",
-    "ɢ",
-    "ʜ",
-    "ɪ",
-    "ᴊ",
-    "ᴋ",
-    "ʟ",
-    "ᴍ",
-    "ɴ",
-    "ᴏ",
-    "ᴘ",
-    "ǫ",
-    "ʀ",
-    "s",
-    "ᴛ",
-    "ᴜ",
-    "ᴠ",
-    "ᴡ",
-    "x",
-    "ʏ",
-    "ᴢ",
-]
+
 
 normiefont = [
     "a",
@@ -146,6 +119,34 @@ fbubblefont = [
     "🅧",
     "🅨",
     "🅩",
+]
+CAPS = [
+    "ᴀ",
+    "ʙ",
+    "ᴄ",
+    "ᴅ",
+    "ᴇ",
+    "ғ",
+    "ɢ",
+    "ʜ",
+    "ɪ",
+    "ᴊ",
+    "ᴋ",
+    "ʟ",
+    "ᴍ",
+    "ɴ",
+    "ᴏ",
+    "ᴘ",
+    "ǫ",
+    "ʀ",
+    "s",
+    "ᴛ",
+    "ᴜ",
+    "ᴠ",
+    "ᴡ",
+    "x",
+    "ʏ",
+    "ᴢ",
 ]
 squarefont = [
     "🄰",
@@ -376,7 +377,7 @@ def fbubble(update, context):
 
 @run_async
 @typing_action
-def caps(update, context):
+def CAPS(update, context):
     args = context.args
     message = update.effective_message
     string = ""
@@ -561,7 +562,7 @@ FSQUARE_HANDLER = DisableAbleCommandHandler("fsquare", fsquare)
 BLUE_HANDLER = DisableAbleCommandHandler("blue", blue)
 LATIN_HANDLER = DisableAbleCommandHandler("latin", latin)
 LINED_HANDLER = DisableAbleCommandHandler("lined", lined)
-caps_HANDLER = DisableAbleCommandHandler("caps", caps)
+CAPS_HANDLER = DisableAbleCommandHandler("caps", caps)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(BUBBLE_HANDLER)
 dispatcher.add_handler(FBUBBLE_HANDLER)
@@ -570,8 +571,8 @@ dispatcher.add_handler(FSQUARE_HANDLER)
 dispatcher.add_handler(BLUE_HANDLER)
 dispatcher.add_handler(LATIN_HANDLER)
 dispatcher.add_handler(LINED_HANDLER)
-dispatcher.add_handler(caps_HANDLER)
-__command_list__ = ["caps"]
+dispatcher.add_handler(CAPS_HANDLER)
+__command_list__ = ["CAPS"]
 __command_list__ = ["weebify"]
 __command_list__ = ["bubble"]
 __command_list__ = ["fbubble"]
@@ -581,7 +582,7 @@ __command_list__ = ["blue"]
 __command_list__ = ["latin"]
 __command_list__ = ["lined"]
 __handlers__ = [WEEBIFY_HANDLER]
-__handlers__ = [caps_HANDLER]
+__handlers__ = [CAPS_HANDLER]
 __handlers__ = [BUBBLE_HANDLER]
 __handlers__ = [FBUBBLE_HANDLER]
 __handlers__ = [SQUARE_HANDLER]
