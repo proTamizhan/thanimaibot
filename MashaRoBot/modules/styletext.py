@@ -4,6 +4,37 @@ from MashaRoBot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
+
+
+caps = [
+    "ᴀ",
+    "ʙ",
+    "ᴄ",
+    "ᴅ",
+    "ᴇ",
+    "ғ",
+    "ɢ",
+    "ʜ",
+    "ɪ",
+    "ᴊ",
+    "ᴋ",
+    "ʟ",
+    "ᴍ",
+    "ɴ",
+    "ᴏ",
+    "ᴘ",
+    "ǫ",
+    "ʀ",
+    "s",
+    "ᴛ",
+    "ᴜ",
+    "ᴠ",
+    "ᴡ",
+    "x",
+    "ʏ",
+    "ᴢ",
+]
+
 normiefont = [
     "a",
     "b",
@@ -119,7 +150,8 @@ fbubblefont = [
 squarefont = [
     "🄰",
     "🄱",
-    "🄲",
+    "🄲", co
+
     "🄳",
     "🄴",
     "🄵",
@@ -342,6 +374,35 @@ def fbubble(update, context):
         message.reply_text(string)
 
 
+
+@run_async
+@typing_action
+def caps(update, context):
+    args = context.args
+    message = update.effective_message
+    string = ""
+
+    if message.reply_to_message:
+        string = message.reply_to_message.text.lower().replace(" ", "  ")
+
+    if args:
+        string = "  ".join(args).lower()
+
+    if not string:
+        message.reply_text("Usage is `/caps <text>`", parse_mode=ParseMode.MARKDOWN)
+        return
+
+    for normiecharacter in string:
+        if normiecharacter in normiefont:
+            fbubblecharacter = fbubblefont[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, fbubblecharacter)
+
+    if message.reply_to_message:
+        message.reply_to_message.reply_text(string)
+    else:
+        message.reply_text(string)
+
+
 @run_async
 @typing_action
 def square(update, context):
@@ -489,6 +550,7 @@ __help__ = """
  - /blue <text>: bluify your text!
  - /latin <text>: latinify your text!
  - /lined <text>: lined your text!
+- /caps <text>: ᴍᴀᴋᴇs ʟɪᴋᴇ ᴛʜɪs ᴛᴇxᴛ 
 """
 __mod_name__ = "sᴛʏʟᴇ ᴛᴇxᴛ🦚"
 
@@ -500,7 +562,7 @@ FSQUARE_HANDLER = DisableAbleCommandHandler("fsquare", fsquare)
 BLUE_HANDLER = DisableAbleCommandHandler("blue", blue)
 LATIN_HANDLER = DisableAbleCommandHandler("latin", latin)
 LINED_HANDLER = DisableAbleCommandHandler("lined", lined)
-
+caps_HANDLER = DisableAbleCommandHandler("caps", caps)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(BUBBLE_HANDLER)
 dispatcher.add_handler(FBUBBLE_HANDLER)
@@ -509,7 +571,8 @@ dispatcher.add_handler(FSQUARE_HANDLER)
 dispatcher.add_handler(BLUE_HANDLER)
 dispatcher.add_handler(LATIN_HANDLER)
 dispatcher.add_handler(LINED_HANDLER)
-
+dispatcher.add_handler(caps_HANDLER)
+__command_list__ = ["caps"]
 __command_list__ = ["weebify"]
 __command_list__ = ["bubble"]
 __command_list__ = ["fbubble"]
@@ -519,6 +582,7 @@ __command_list__ = ["blue"]
 __command_list__ = ["latin"]
 __command_list__ = ["lined"]
 __handlers__ = [WEEBIFY_HANDLER]
+__handlers__ = [caps_HANDLER]
 __handlers__ = [BUBBLE_HANDLER]
 __handlers__ = [FBUBBLE_HANDLER]
 __handlers__ = [SQUARE_HANDLER]
