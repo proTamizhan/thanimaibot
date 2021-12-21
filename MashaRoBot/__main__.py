@@ -7,7 +7,7 @@ SUPPORT_CHAT = "chucky_support"
 import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot, ubot)
+                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -726,11 +726,7 @@ def main():
         telethn.run_until_disconnected()
 
     updater.idle()
-try:
-    ubot.start()
-except BaseException:
-    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
-    sys.exit(1)
+
 
 if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
