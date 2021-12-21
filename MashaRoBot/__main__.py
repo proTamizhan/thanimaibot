@@ -7,7 +7,7 @@ SUPPORT_CHAT = "chucky_support"
 import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
+                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot, ubot)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -87,8 +87,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/7aba4b67279c844454b4c.jpg)
-`Click on the buttons below to get documentation about specific modules..`"""
+`Heya`👀
+`chexk my below all features and it all made my @TheTeleGramPro😆`"""
 
 
 MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
