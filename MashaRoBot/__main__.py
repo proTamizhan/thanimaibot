@@ -60,8 +60,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ 
-`Hellow`
-`I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential.` 
+𝕙𝕖𝕪  𝕥𝕙𝕖𝕣𝕖!.
+𝕚'𝕞  𝕒  𝕞𝕠𝕕𝕦𝕝𝕒𝕣  𝕘𝕣𝕠𝕦𝕡  𝕞𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥  𝕓𝕠𝕥  𝕨𝕚𝕥𝕙  𝕒  𝕗𝕖𝕨  𝕗𝕦𝕟  𝕖𝕩𝕥𝕣𝕒𝕤!  𝕙𝕒𝕧𝕖  𝕒  𝕝𝕠𝕠𝕜  𝕒𝕥  𝕥𝕙𝕖  𝕗𝕠𝕝𝕝𝕠𝕨𝕚𝕟𝕘  𝕗𝕠𝕣  𝕒𝕟  𝕚𝕕𝕖𝕒  𝕠𝕗  𝕤𝕠𝕞𝕖  𝕠𝕗  𝕥𝕙𝕖  𝕥𝕙𝕚𝕟𝕘𝕤  𝕚  𝕔𝕒𝕟  𝕙𝕖𝕝𝕡  𝕪𝕠𝕦  .
+𝕛𝕠𝕚𝕟  𝕞𝕪 [𝕟𝕖𝕨𝕤  𝕔𝕙𝕒𝕟𝕟𝕖𝕝](t.me/Thanimaibots) 𝕥𝕠  𝕘𝕖𝕥  𝕦𝕡𝕕𝕒𝕥𝕖𝕕  𝕒𝕓𝕠𝕦𝕥  𝕞𝕖.
 """
 buttons = [
     [
@@ -87,8 +88,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Heya`👀
-`chexk my below all features and it all made my @TheTeleGramPro😆`"""
+Hey There!
+I'm here to help you manage your groups!
+Commands available:
+× /start: Start the bot
+× /help: Give's you this message.
+All commands can either be used with / OR !."""
 
 
 MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
