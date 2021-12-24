@@ -5,6 +5,7 @@ from sys import argv
 from typing import Optional
 SUPPORT_CHAT = "chucky_support"
 import MashaRoBot.modules.sql.users_sql as sql
+import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
@@ -61,6 +62,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """ 
 𝕙𝕖𝕪  𝕥𝕙𝕖𝕣𝕖!.
+*Hola! {},*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 𝕚'𝕞  𝕒  𝕞𝕠𝕕𝕦𝕝𝕒𝕣  𝕘𝕣𝕠𝕦𝕡  𝕞𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥  𝕓𝕠𝕥  𝕨𝕚𝕥𝕙  𝕒  𝕗𝕖𝕨  𝕗𝕦𝕟  𝕖𝕩𝕥𝕣𝕒𝕤!  𝕙𝕒𝕧𝕖  𝕒  𝕝𝕠𝕠𝕜  𝕒𝕥  𝕥𝕙𝕖  𝕗𝕠𝕝𝕝𝕠𝕨𝕚𝕟𝕘  𝕗𝕠𝕣  𝕒𝕟  𝕚𝕕𝕖𝕒  𝕠𝕗  𝕤𝕠𝕞𝕖  𝕠𝕗  𝕥𝕙𝕖  𝕥𝕙𝕚𝕟𝕘𝕤  𝕚  𝕔𝕒𝕟  𝕙𝕖𝕝𝕡  𝕪𝕠𝕦  .
 𝕛𝕠𝕚𝕟  𝕞𝕪 [𝕟𝕖𝕨𝕤  𝕔𝕙𝕒𝕟𝕟𝕖𝕝](t.me/Thanimaibots) 𝕥𝕠  𝕘𝕖𝕥  𝕦𝕡𝕕𝕒𝕥𝕖𝕕  𝕒𝕓𝕠𝕦𝕥  𝕞𝕖.
 """
@@ -203,8 +209,13 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+           first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
