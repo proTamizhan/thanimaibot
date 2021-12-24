@@ -3,7 +3,6 @@ import time
 import re
 from sys import argv
 from typing import Optional
-SUPPORT_CHAT = "chucky_support"
 import MashaRoBot.modules.sql.users_sql as sql
 import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
@@ -209,10 +208,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-           first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
-                    escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
