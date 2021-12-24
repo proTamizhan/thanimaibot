@@ -101,7 +101,7 @@ Commands available:
 × /help: Give's you this message.
 All commands can either be used with / OR !."""
 
-
+START_IMG = "https://telegra.ph/file/91d3a167481da71ab5b44.mp4"
 MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -219,11 +219,21 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "Nan uir oda erukan da ena look 😒😒😒!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+           update.effective_message.reply_video(
+            START_IMG, caption= "<code>I'm awake already!\nHaven't slept since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport")
+                  ],
+                  [
+                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/thanimaibots")
+                  ]
+                ]
+            ),
         )
 
 
