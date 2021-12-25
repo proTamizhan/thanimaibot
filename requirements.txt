@@ -1,6 +1,7 @@
 ubot
 future
 emoji
+pykeyboard
 lxml
 wget
 gtts
