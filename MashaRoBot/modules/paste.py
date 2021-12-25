@@ -7,7 +7,8 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from MashaRoBot import pgram, aiohttpsession
+from MashaRoBot import pbot as pgram 
+from MashaRoBot import aiohttpsession
 from MashaRoBot.utils.errors import capture_err
 from MashaRoBot.utils.pastebin import paste
 
