@@ -178,13 +178,6 @@ def __load_cleaner_list():
     global CLEANER_CHATS
 
     try:
-        GLOBAL_IGNORE_COMMANDS = {
-            int(x.command) for x in SESSION.query(CleanerBlueTextGlobal).all()
-        }
-    finally:
-        SESSION.close()
-
-    try:
         for x in SESSION.query(CleanerBlueTextChatSettings).all():
             CLEANER_CHATS.setdefault(x.chat_id, {"setting": False, "commands": set()})
             CLEANER_CHATS[x.chat_id]["setting"] = x.is_enable
