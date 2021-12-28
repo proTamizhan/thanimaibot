@@ -1,10 +1,10 @@
 {
 
-      "name": "pullu",
+      "name": "lonely king bot ",
 
       "description": "Telegram group management bot.",
 
-      "logo": "https://telegra.ph/file/0c2a666a4d94ad1616593.jpg",
+      "logo": "https://telegra.ph/file/2bc7bec8308bdcf9512d6.jpg",
 
       "keywords": [
 
@@ -20,7 +20,7 @@
 
       ],   
 
-   "repository": "https://github.com/Mohankumarroshini/Athenaprobot.git",
+   "repository": "https://github.com/proTamizhan/thanimaibotgit",
 
    "addons": [
 
@@ -102,7 +102,7 @@
 
          "required": true,
 
-         "value": "1956381927"
+         "value": "1928904042"
 
       },
 
@@ -136,7 +136,7 @@
 
          "description": "Your username without the @",
 
-         "value": "ProErrorXD"
+         "value": "TheTelegrampro"
 
       },
 
