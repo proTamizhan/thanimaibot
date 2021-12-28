@@ -1,5 +1,5 @@
 __help__= f"""
-*Athena AI Chatbot* 
+*Thanimai AI * 
 /addchat : Enables and Disables kazuko AI Chat mode (EXCLUSIVE)
 *Powered by* : [Kuki Chatbot](https://github.com/MoeZilla/KukiChatbot)
 """
