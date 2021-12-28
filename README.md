@@ -20,13 +20,6 @@
 > ⭐️ Thanks to everyone who starred our projects,
  That is the greatest pleasure we have !
 
-## Available on Telegram as [😈Lonelyking😈](https://t.me/sarbudeen786)
-
-# 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/proTamizhan/thanimaibot)
-
-[Generate String Session](https://replit.com/@Lonelysing/GenerateStringSession)  << Select telethon
-
 # ❤️ Support
 <a href="https://t.me/thanimaibots"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
@@ -40,11 +33,30 @@
 - [🔥 TheTelegrampro🔥](https://t.me/TheTelegrampro) » [GitHub](https://github.com/proTamizhan) (Bot Founder)
 
 
+  <h1>
+    <p align="center">
+        <a href="https://heroku.com/deploy?template=https://github.com/proTamizhan/thanimaibot">
+            <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+        </a>
+    </p>
+</h1>
 
+</details> 
 
-
-
-
+<details>
+	<summary>Railway Deploy</summary>
+	<br>
+	<b>
+The Unlimited Dyons to Deploy This Bot is Via Railway.
+		In Order To deploy, You Just add The Variables Manually in Railway and Done!</b>
+	
+  <h1>
+    <p align="center">
+        <a href="https://railway.app/new/template?template=https://github.com/proTamizhan/thanimaibot">
+            <img src="https://railway.app/button.svg" alt="Deploy">
+        </a>
+    </p>
+</h1>
 
 
 ### ✪ Supporters
