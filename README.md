@@ -24,7 +24,7 @@
 # 🏃‍♂️ Easy Deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/proTamizhan/thanimaibot)
 
-[Generate String Session](https://replit.com/@SpEcHiDe/GenerateStringSession)  << Select telethon
+[Generate String Session](https://replit.com/@Lonelysing/GenerateStringSession)  << Select telethon
 
 # ❤️ Support
 <a href="https://t.me/thanimaibots"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
