@@ -9,8 +9,8 @@
 <p align="center"><a href="https://t.me/thanimaisupport"><img src="nh" width="400"></a></p>
 <p align="center">
     <a href="https://app.codacy.com/gh/kdifamily/thanimaiclone/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/TeamOfShadow/Shadow"> <img src="https://img.shields.io/github/repo-size/TeamOfShadow/Shadow?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/TeamOfShadow/Shadow/commits/"> <img src="https://img.shields.io/github/last-commit/TeamOfShadow/Shadow?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/proTamizhan"> <img src="https://img.shields.io/github/repo-size/TeamOfShadow/Shadow?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/proTamizhan/"> <img src="https://img.shields.io/github/last-commit/TeamOfShadow/Shadow?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
     
 ## how to deploy on railway
 ## first fill ur config.py
