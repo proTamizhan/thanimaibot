@@ -12,8 +12,9 @@
     <a href="https://github.com/TeamOfShadow/Shadow"> <img src="https://img.shields.io/github/repo-size/TeamOfShadow/Shadow?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/TeamOfShadow/Shadow/commits/"> <img src="https://img.shields.io/github/last-commit/TeamOfShadow/Shadow?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
     
-
-
+## how to deploy on railway
+## first fill ur config.py
+## Go railway.app fork this repo and select ur forked repo and deploy
 
 
 > ⭐️ Thanks to everyone who starred Shadow, That is the greatest pleasure we have !
