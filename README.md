@@ -19,7 +19,7 @@
 
 > ⭐️ Thanks to everyone who starred Shadow, That is the greatest pleasure we have !
 
-## Available on Telegram as [Shadow](https://t.me/Mr_Shadow_Robot)
+## Available on Telegram as [😈Lonelyking😈](https://t.me/sarbudeen786)
 
 # 🏃‍♂️ Easy Deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/proTamizhan/thanimaibot)
