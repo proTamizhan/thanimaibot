@@ -19,7 +19,7 @@ class Config(object):
     JOIN_LOGGER = -1001739802989
     EVENT_LOGS = -1001739802989
 
-    #RE
+    ALLOW_CHATS = "True"
     SQLALCHEMY_DATABASE_URI = 'ELEPHAT OR HEROKU DB URL'  
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
