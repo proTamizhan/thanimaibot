@@ -9,7 +9,8 @@ def get_user_list(config, key):
 
 class Config(object):
     LOGGER = True
-
+  
+    TEMP_DOWNLOAD_DIRECTORY = 'None'
     API_ID = "FILL API ID "  # integer value, dont use ""
     API_HASH = "FIL API HASH"
     TOKEN = "BOT_TOKEN"
