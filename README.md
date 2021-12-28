@@ -17,7 +17,8 @@
 ## Go railway.app fork this repo and select ur forked repo and deploy
 
 
-> ⭐️ Thanks to everyone who starred Shadow, That is the greatest pleasure we have !
+> ⭐️ Thanks to everyone who starred our projects,
+ That is the greatest pleasure we have !
 
 ## Available on Telegram as [😈Lonelyking😈](https://t.me/sarbudeen786)
 
