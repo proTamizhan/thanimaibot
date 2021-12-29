@@ -188,7 +188,6 @@ else:
 
     OWNER_USERNAME = Config.OWNER_USERNAME
 
-    ALLOW_CHATS = Config.ALLOW_CHATS
 
     try:
 
