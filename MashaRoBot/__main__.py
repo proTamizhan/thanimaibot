@@ -60,33 +60,30 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ 
-𝕙𝕖𝕪  𝕥𝕙𝕖𝕣𝕖!.
-telegram Group management with lots of features.
-───────────────────────
-× Uptime: 8days, 10h:36m:16s
-×  `{}` users, across `{}` chats..
-───────────────────────
-✪ Bot For help You Manage & Protect Your Groups.
-➼ So What U Waiting For Add Me To Ur chat
-───────────────────────
+Hello I'm ᴍʀ.ᴄᴏsᴍɪᴄ™ ,
+🚀 I ᴀᴍ ᴀ ᴄʀᴇᴀᴛᴏʀ ᴏғ ᴛʜɪs ᴜɴɪᴠᴇʀsᴇ ᴘᴏᴡᴇʀғᴜʟ ғᴇᴀᴛᴜʀᴇs[.](https://telegra.ph/MrCosmic-11-29)
+☄️ ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ [ɢᴏᴅ](https://t.me/EL_DRAGO_DESTRUCTOR) ғᴏʀ ᴀɴʏ ǫᴜᴇʀʏ ᴀʙᴏᴜᴛ ᴍᴇ.
+☄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ ᴍʏ ᴜɴᴅᴇʀᴀᴛᴇᴅ Poᴡers.
+☄️ ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍʏ ᴘᴏᴡᴇʀғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+
 """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
+            text="➕️ Aᴅᴅ ᴍʀ.ᴄᴏsᴍɪᴄ™ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/Mr_Cosmic_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ℹ️ᴀʙᴏᴜᴛ", callback_data="masha_"),
+        InlineKeyboardButton(text="🆘ʜᴇʟᴘ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
+        InlineKeyboardButton(
+            text="📳 Chat Group 📳", url="https://t.me/Mr_Cosmic_Chatz"),
+        InlineKeyboardButton(
+            text="👥Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ👥", url="https://t.me/Mr_Cosmic_Support"),
     ],
     [
-        InlineKeyboardButton(text="❤️𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊$💙", url="t.me/Thanimaibots"),
-        InlineKeyboardButton(text="✨ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭✨", url="t.me/Thanimaisupport"),
-    ],
-    [
-        InlineKeyboardButton(text="⚠️𝗦𝗼𝘂𝗿𝗰𝗲⚠️🖥️", callback_data="source_"
+        InlineKeyboardButton(text="🔔Uᴘᴅᴀᴛᴇs🔔", url="https://t.me/Mr_Cosmic_Updates""
         ),
     ],
 ]
@@ -94,20 +91,15 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey There!
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message.
-All commands can either be used with / OR !."""
+ᴍʀ.ᴄᴏsᴍɪᴄ comes with many special features in it*✨
+🛸*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF ᴍʀ.ᴄᴏsᴍɪᴄ *🛸
+𖣘 *All commands can be used with* `/` *or* `!`.
+𖣘 *If you facing any issue or find any bugs in any command then you can report it on @Mr_Cosmic_Support."""
 
-START_IMG = "https://telegra.ph/file/91d3a167481da71ab5b44.mp4"
-MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
+START_IMG = "https://telegra.ph/MrCosmic-11-29"
+MASHA_IMG = "https://telegra.ph/MrCosmic-11-29"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """https://t.me/EL_DRAGO_DESTRUCTOR"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -227,10 +219,10 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport")
+                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Mr_Cosmic_Support")
                   ],
                   [
-                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/thanimaibots")
+                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/Mr_Cosmic_Updates")
                   ]
                 ]
             ),
@@ -365,22 +357,22 @@ def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
-                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
+            text="""I'm *ᴍʀ.ᴄᴏsᴍɪᴄ*, a powerful group management bot to help you to manage your group easily...
+•I can do lots of things in group.
+•I can ban/kick/mute any User with admin privileges 
+•ADD me into your Group and Make me Admin🙂and let me do my work...in your group
+   
+   ~Thanks❤️~.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
+                  [
+                    InlineKeyboardButton(text="📳 Chat Group 📳", url="https://t.me/Mr_Cosmic_Chatz"),
+                    InlineKeyboardButton("•Devs•", callback_data="source_")
+                 ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="Back🤧", callback_data="masha_back")
                  ]
                 ]
             ),
@@ -400,8 +392,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Lonely king*
-                 \nMy source code is private  [support](t.me/thanimaisupport) .""",
+            text=""" Hi..🤗 I'm *ᴍʀ.ᴄᴏsᴍɪᴄ*
+                 \nMy source code is private  [ᴜɴɪᴠᴇʀsᴇ](t.me/https://t.me/Mr_Cosmic_Support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -648,7 +640,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1840990207 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -695,7 +687,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Yes I am Back to online!](https://telegra.ph/file/9825bc2819bb7c78abe67.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ᴄᴏsᴍɪᴄ ɪs ʙᴀᴄᴋ⚡")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
