@@ -10,9 +10,9 @@ def get_user_list(config, key):
 class Config(object):
     LOGGER = True
 
-    API_ID = "FILL API ID "  # integer value, dont use ""
-    API_HASH = "FIL API HASH"
-    TOKEN = "BOT_TOKEN"
+    API_ID = "12449430"  # integer value, dont use ""
+    API_HASH = "7dcdaf9d958f8d866a2c600e864dd311"
+    TOKEN = "2113664186:AAEC2ZYhOPgMEEkB0Q5GIOv50ZTtf9SFSO4"
     OWNER_ID = 1732814103  
     OWNER_USERNAME = "theTelegrampro"
     SUPPORT_CHAT = 'Thanimaisupport'
@@ -20,7 +20,7 @@ class Config(object):
     EVENT_LOGS = -1001739802989
 
     #RE
-    SQLALCHEMY_DATABASE_URI = 'ELEPHAT OR HEROKU DB URL'  
+    SQLALCHEMY_DATABASE_URI = 'postgres://cyzezsms:FPx9o440SSy2fCOimb5JfD3RVFUycT8w@tyke.db.elephantsql.com/cyzezsms'  
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
