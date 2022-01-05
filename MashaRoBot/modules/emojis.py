@@ -235,7 +235,7 @@ earth_ani = [
 @user_admin
 @run_async
 def blockanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('⬜') 
+    msg = update.await.reply_text('⬜') 
     for x in range(EDIT_TIMES):
         msg.edit_text(block_chain[x%18])
         time.sleep(EDIT_SLEEP)
@@ -247,7 +247,7 @@ def blockanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def clockanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🕛') 
+    msg = update.await.reply_text('🕛') 
     for x in range(EDIT_TIMES):
         msg.edit_text(clock_ani[x%11])
         time.sleep(EDIT_SLEEP)
@@ -258,7 +258,7 @@ def clockanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def earthanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🌏') 
+    msg = update.await.reply_text('🌏') 
     for x in range(EDIT_TIMES):
         msg.edit_text(earth_ani[x%18])
         time.sleep(EDIT_SLEEP)
@@ -270,7 +270,7 @@ def earthanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def moonanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🌚') 
+    msg = update.await.reply_text('🌚') 
     for x in range(EDIT_TIMES):
         msg.edit_text(moon_ani[x%32])
         time.sleep(EDIT_SLEEP)
@@ -287,7 +287,7 @@ def moonanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def bombs(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('💣') 
+    msg = update.await.reply_text('💣') 
     for x in range(EDIT_TIMES):
         msg.edit_text(bomb_ettu[x%9])
         time.sleep(EDIT_SLEEP)
@@ -322,7 +322,7 @@ def hack(bot: Bot, update: Update):
 @user_admin
 @run_async
 def love(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('❣️') 
+    msg = update.await.reply_text('❣️') 
     for x in range(EDIT_TIMES):
         msg.edit_text(love_siren[x%5])
         time.sleep(EDIT_SLEEP)
@@ -334,7 +334,7 @@ def love(bot: Bot, update: Update):
 @user_admin
 @run_async
 def kill(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🔫') 
+    msg = update.await.reply_text('🔫') 
     for x in range(EDIT_TIMES):
         msg.edit_text(kill_you[x%12])
         time.sleep(EDIT_SLEEP)
