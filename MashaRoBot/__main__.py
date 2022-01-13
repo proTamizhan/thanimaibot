@@ -73,20 +73,17 @@ telegram Group management with lots of features.
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
+            text="➕Aᴅᴅ Mᴇ ᴛᴏ Gʀᴏᴜᴘ➕", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Hᴇʟᴘ Cᴏᴍᴍᴀɴᴅs❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/UNIQUE_SOCIETY"),
+        InlineKeyboardButton(text=Uᴘᴅᴀᴛᴇ", url="t.me/ALL_DEAR_COMRADE"),
     ],
     [
-        InlineKeyboardButton(text="❤️𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊$💙", url="t.me/Thanimaibots"),
-        InlineKeyboardButton(text="✨ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭✨", url="t.me/Thanimaisupport"),
-    ],
-    [
-        InlineKeyboardButton(text="⚠️𝗦𝗼𝘂𝗿𝗰𝗲⚠️🖥️", callback_data="source_"
+        InlineKeyboardButton(text="Dᴇᴠᴇʟᴏᴘᴇ", callback_data="source_"
         ),
     ],
 ]
