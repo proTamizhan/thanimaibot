@@ -59,37 +59,42 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ 
+HELP_MSG = "Click the button below to get help manu in your pm."
+START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+SERENA_IMG = "https://telegra.ph/file/e2f6fd79f0cbd36c83a18.jpg"
+HELP_IMG = "https://telegra.ph/file/46fac05bf4e7bb20053e6.jpg"
+
+PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/15b2a86d231544b826d00.jpg) 」────
-telegram Group management with lots of features.
-───────────────────────
+*Merry Christmas! {},*
+*I am a Pokégirl themed advance group management bot with a lot of New And Powerful Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
-───────────────────────
-✪ Bot For help You Manage & Protect Your Groups.
-➼ So What U Waiting For Add Me To Ur chat
-───────────────────────
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Help Buttons Below To Know My Abilities ❦❦
 """
+
 buttons = [
     [
-        InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🥰", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="Dᴇᴠʟᴏᴘᴇʀ🤓", url="https://t.me/TheTelegrampro"),
-    ],
-    [
-        InlineKeyboardButton(text="❤️𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊$💙", url="t.me/Thanimaibots"),
-        InlineKeyboardButton(text="✨ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭✨", url="t.me/Thanimaisupport"),
-    ],
-    [
-        InlineKeyboardButton(text="⚠️𝗦𝗼𝘂𝗿𝗰𝗲⚠️🖥️", callback_data="source_"
-        ),
-    ],
-]
+                        InlineKeyboardButton(
+                            text=f"Add Serena Yvonne To Your Group",
+                            url=f"t.me/SerenaYvonneRobot?startgroup=true")
+                    ],
+                   [
+                       InlineKeyboardButton(text="[❦ Help ❦]",  callback_data="help_back"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
+                       InlineKeyboardButton(text="[❦ Inline ❦]", switch_inline_query_current_chat=""),
+                     ],
+                    [                  
+                       InlineKeyboardButton(
+                             text="⛄ Support",
+                             url="https://t.me/CrowdStrikeChat"),
+                       InlineKeyboardButton(
+                             text="🎄 Updates",
+                             url="https://t.me/CrowdXStrike")
+                     ], 
+    ]
 
 
 
