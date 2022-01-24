@@ -59,60 +59,49 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-HELP_MSG = "Click the button below to get help manu in your pm."
-START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
-SERENA_IMG = "https://telegra.ph/file/e2f6fd79f0cbd36c83a18.jpg"
-HELP_IMG = "https://telegra.ph/file/46fac05bf4e7bb20053e6.jpg"
-
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/15b2a86d231544b826d00.jpg) 」────
-*Merry Christmas! {},*
-*I am a Pokégirl themed advance group management bot with a lot of New And Powerful Features.*
+────「 [neko](https://telegra.ph/file/38559b4da168432999bb8.jpg) 」────
+*Hola! {},*
+*I am an Anime themed advance group management bot with a lot of Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
+• *thnx to @NekoXRobot for neko robot repo*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ❦❦
+➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Add Serena Yvonne To Your Group",
-                            url=f"t.me/SerenaYvonneRobot?startgroup=true")
+                            text="Add Neko To Your Group",
+                            url="t.me/NekoXRobot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="[❦ Help ❦]",  callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
-                       InlineKeyboardButton(text="[❦ Inline ❦]", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
+                       InlineKeyboardButton(text="[► Repo ◄]", url="https://GitHub.com/Hodacka/NekoRobot-2"),
+                       InlineKeyboardButton(text="[► Network ◄]", url="https://t.me/Yuki_Network"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="⛄ Support",
-                             url="https://t.me/CrowdStrikeChat"),
+                             text="Support",
+                             url="https://t.me/nekoxsupport"),
                        InlineKeyboardButton(
-                             text="🎄 Updates",
-                             url="https://t.me/CrowdXStrike")
+                             text="Updates",
+                             url="https://t.me/noha_updates")
                      ], 
     ]
 
 
 
 HELP_STRINGS = """
-Hey There!
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message.
-All commands can either be used with / OR !."""
+`Hi.. I'm` [Neko💜]("https://telegra.ph/file/85ce7f2dc743fb5c0c93a.jpg") 
+`Click on the buttons below to get about Cute Futures..`"""
 
-START_IMG = "https://telegra.ph/file/91d3a167481da71ab5b44.mp4"
-MASHA_IMG = "https://telegra.ph/file/7aba4b67279c844454b4c.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+NEKO_IMG = "https://telegra.ph/file/8fa070dfa60da6c024ac3.mp4"
+
+DONATE_STRING = """Hey , If you want Donate means Give a Star ⭐ to this [Repo](https://GitHub.com/Hodacka/NekoRobot-2)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -131,8 +120,6 @@ for module_name in ALL_MODULES:
 
     if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
-    else:
-        raise Exception("Can't have two modules with the same name! Please change one")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module
@@ -158,6 +145,7 @@ for module_name in ALL_MODULES:
 
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+
 
 
 # do not async
