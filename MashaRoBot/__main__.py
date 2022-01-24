@@ -60,11 +60,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ 
-𝕙𝕖𝕪  𝕥𝕙𝕖𝕣𝕖!.
+────「 [{}](https://telegra.ph/file/15b2a86d231544b826d00.jpg) 」────
 telegram Group management with lots of features.
 ───────────────────────
-× Uptime: 8days, 10h:36m:16s
-×  `{}` users, across `{}` chats..
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
 ───────────────────────
 ✪ Bot For help You Manage & Protect Your Groups.
 ➼ So What U Waiting For Add Me To Ur chat
