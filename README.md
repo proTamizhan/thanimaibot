@@ -32,7 +32,7 @@
 
 ### ✪ Owners
 - [🔥 TheTelegrampro🔥](https://t.me/TheTelegrampro) » [GitHub](https://github.com/proTamizhan) (Bot Founder)
-- [ 💔LONELYKING💔](https://t.me/sarbudeen786) » [ GITHUB](https://GitHub.com/lonelysing) [💔👑தனிமை அரசன்💔👑] (t.me/thanimaibot)
+- [ 💔LONELYKING💔](https://t.me/sarbudeen786) » [ GITHUB](https://GitHub.com/lonelysing) [💔👑தனிமை அரசன்💔👑](http://t.me/Thanimaibot)
 
   <h1>
     <p align="center">
