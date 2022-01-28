@@ -15,6 +15,7 @@
 ## how to deploy on railway
 ## first fill ur config.py
 ## Go railway.app fork this repo and select ur forked repo and deploy
+OUR BOTS LISTED HERE 
 
 
 > ⭐️ Thanks to everyone who starred our projects,
@@ -31,7 +32,7 @@
 
 ### ✪ Owners
 - [🔥 TheTelegrampro🔥](https://t.me/TheTelegrampro) » [GitHub](https://github.com/proTamizhan) (Bot Founder)
-
+- [ 💔LONELYKING💔](https://t.me/sarbudeen786) » [ GITHUB](https://GitHub.com/lonelysing) (💔👑தனிமை அரசன்💔👑)
 
   <h1>
     <p align="center">
